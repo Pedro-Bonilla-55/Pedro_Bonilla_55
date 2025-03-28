@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica CSS</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgb(227, 227, 227);
+        }
+        .encab{
+            background-color: rgb(255, 196, 0);
+            width: 100%;
+            height: 70px;
+            padding-top: 25px;
+        }
+        a{
+            display: inline;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            text-decoration: none;
+        }
+        .titulo{
+            font-size: 25px;
+            display: inline;
+            font-weight: bold;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 5%;
+        }
+        .opf{
+            text-align: right;
+            margin-left: 60%;
+            padding: 4px;
+        }
+        .opf:hover{
+            color:  rgb(0, 0, 0);
+        }
+        .op:hover{
+            color:  rgb(0, 0, 0);
+        }
+        .op{
+            padding: 4px;
+        }
+        .inf1{
+            display: inline-block;
+            background-color: white;
+            width: 250px;
+            height: 290px;
+            margin-left: 290px;
+            top: 20px;
+            position: relative;
+            border-radius: 5px;
+        }
+        .inf1:hover{
+            transform: scale(1.03);
+            transition: all 0.5s ease;
+        }
+        img{
+            width: 100%;
+            height: 75%;
+            border-radius: 10px 10px 0px 0px;
+        }
+        .inf{
+            margin-left: 5%;
+            margin-right: 5%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .inf2{
+            display: inline-block;
+            background-color: white;
+            width: 250px;
+            height: 290px;
+            margin-left: 60px;
+            top: 20px;
+            position: relative;
+            border-radius: 5px;
+        }
+        .inf2:hover{
+            transform: scale(1.03);
+            transition: all 0.5s ease;
+        }
+        .inf3{
+            display: inline-block;
+            background-color: white;
+            width: 250px;
+            height: 290px;
+            margin-left: 60px;
+            top: 20px;
+            position: relative;
+            border-radius: 5px;
+        }
+        .inf3:hover{
+            transform: scale(1.03);
+            transition: all 0.5s ease;
+        }
+        table{
+            background-color: #f0f0f0;
+            position: relative;
+            left: 290px;
+            width: 62%;
+            top: 55px;
+            border-collapse: collapse;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table tr td{
+            padding: 8px 6px;
+            border-bottom: 0.4px solid black;
+        }
+        table tr:hover{
+            background-color: lightgray;
+            transform: scale(1.0);
+            transition: all 0.5s ease;
+        }
+        table tr:nth-child(1){
+            background-color:  rgb(255, 196, 0);
+            color: #f0f0f0;
+        }
+        table tr:nth-child(1):hover{
+            background-color: rgb(188, 188, 195);
+        }
+    </style>
+</head>
+<body>
+    <div class="encab">
+        <p class="titulo">Viajes y Naturaleza</p>
+        <a href="inicio.html" class="opf">Inicio</a>
+        <a href="galeria.html" class="op">Galería</a>
+        <a href="destinos.html" class="op">Destinos</a>
+        <a href="contacto.html" class="op">Contacto</a>
+    </div>
+    <div class="inf1"><img src="foto1.jpg"><h4 class="inf">Paisajes de montaña</h4><p class="inf">Impresionantes vistas de cordilleras y picos nevados.</p></div>
+    <div class="inf2"><img src="foto2.jpg"><h4 class="inf">Bosques misteriosos</h4><p class="inf">Explorando la tranquilidad de los bosques antiguos.</p></div>
+    <div class="inf3"><img src="foto3.jpeg"><h4 class="inf">Costas paradisiacas</h4><p class="inf">Playas de arena blanca y aguas cristalinas.</p></div>
+    <table>
+        <tr>
+            <td>Destino</td>
+            <td>País</td>
+            <td>Dificultad</td>
+            <td>Temporada Recomendada</td>
+        </tr>
+        <tr>
+            <td>Tokio</td>
+            <td>Japón</td>
+            <td>Media</td>
+            <td>Mayo-Septiembre</td>
+        </tr>
+        <tr>
+            <td>París</td>
+            <td>Francia</td>
+            <td>Alta</td>
+            <td>Diciembre-Febrero</td>
+        </tr>
+        <tr>
+            <td>Ámsterdam</td>
+            <td>Paises Bajos</td>
+            <td>Baja</td>
+            <td>Todo el año</td>
+        </tr>
+        <tr>
+            <td>Milán</td>
+            <td>Italia</td>
+            <td>Alta</td>
+            <td>Noviembre-Marzo</td>
+        </tr>
+    </table>
+</body>
+</html>
